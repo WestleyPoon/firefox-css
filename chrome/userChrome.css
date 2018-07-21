@@ -158,6 +158,8 @@
 /*#appMenu-popup {margin-right: -237px !important;}                                                            /* MAC */
 /*#appMenu-popup .panel-arrow {margin-right: 230px !important;}                                                /* MAC */
 
+#appMenu-notification-popup {display:none !important;}
+
 /* Back & Forward buttons */ 
 #back-button > .toolbarbutton-icon,
 #forward-button > .toolbarbutton-icon,
