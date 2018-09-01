@@ -6,5 +6,3 @@ userChrome.css customizations - somewhere between 56 and 57 on nightly 61</br>
 
 **Files**</br>
 all go in profile folder/chrome
-
-floating scrollbar: https://gist.github.com/mrkwatz/277fb19d210a7539304ca2388f24d8e3
