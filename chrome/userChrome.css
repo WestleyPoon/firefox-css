@@ -240,9 +240,6 @@
 
 
 /* ---- misc ----------------------------------------------------------------------- */
-/* scrollbar */
-toolbarbutton#alltabs-button {-moz-binding: url("userChrome.xml#js")}
-
 /* Bookmarks toolbar popup */
 #BMB_viewBookmarksSidebar,                     /* View Sidebar */
 #BMB_bookmarksShowAllTop,                      /* Show All bookmarks */
