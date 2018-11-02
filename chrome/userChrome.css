@@ -1,6 +1,7 @@
 /* ---- colors --------------------------------------------------------------------- */
 :root:-moz-lwtheme-brighttext {                               /* minor color changes to the default dark theme */
-    --chrome-background-color: #343434 !important;            /* tab strip background & inactive tabs */
+    /*--chrome-background-color: #343434 !important;             tab strip background & inactive tabs */
+    --lwt-accent-color: #343434 !important;
     --chrome-secondary-background-color: #343434 !important;  /* nav bar & active tab */
     --chrome-color: #d9d9d9 !important;                       /* url & tab text, close tab & new tab buttons */
     --background-color: #242424 !important;                   /* top border of out of focus window */
