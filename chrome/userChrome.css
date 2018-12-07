@@ -1,10 +1,6 @@
 /* ---- colors --------------------------------------------------------------------- */
 :root:-moz-lwtheme-brighttext {                               /* minor color changes to the default dark theme */
-    /*--chrome-background-color: #343434 !important;             tab strip background & inactive tabs */
     --lwt-accent-color: #343434 !important;
-    --chrome-secondary-background-color: #343434 !important;  /* nav bar & active tab */
-    --chrome-color: #d9d9d9 !important;                       /* url & tab text, close tab & new tab buttons */
-    --background-color: #242424 !important;                   /* top border of out of focus window */
     --autocomplete-popup-background: #343434 !important;      /* urlbar dropdown */
     --arrowpanel-background: #343434 !important;              /* other dropdowns */
 }
@@ -14,7 +10,7 @@
     --urlheight: 38px;  /* urlbar entry height */
 }
 
-
+#main-window {--toolbar-bgcolor: #343434 !important;}
 
 /* ---- urlbar dropdown ------------------------------------------------------------ */
 @-moz-document url(chrome://browser/content/browser.xul) {
@@ -34,7 +30,7 @@
     
     /* Dropdown height */
     #PopupAutoCompleteRichResult .autocomplete-richlistbox {
-        max-height: calc(var(--urlheight) * var(--urlentries)) !important;}
+        max-height: 494px !important;}
     
     /* Align favicons */
     #PopupAutoCompleteRichResult .autocomplete-richlistitem .ac-type-icon {margin-left: 3px !important;}
@@ -104,16 +100,14 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 /* ---- tab bar -------------------------------------------------------------------- */
 /*extra space at the ends*/
-.titlebar-placeholder{display: none !important;}
+.titlebar-spacer{display: none !important;}
 
-/* gap at the very top */
-[tabsintitlebar] {border-top: 0px !important;}                                                               /* WIN */
 #navigator-toolbox {margin-top: -2px !important;}
 
 /* Tab toolbar adjustments */
 #TabsToolbar {
-    margin-bottom: -2px !important;  /* tab/bav bar intersection */       
-    margin-right: 72px !important;   /* room at the end of the bar */                                        /* WIN */
+    background: #343434 !important;
+    margin-bottom: -2px !important;  /* tab/bav bar intersection */      
     /*margin-left: 72px !important;  /* room at the front of the bar */                                        /* MAC */}
 
 /* active tab edge shadow */
@@ -134,8 +128,8 @@
 
 /* titlebar buttons */
 .titlebar-button {padding: 8px 12px !important;}                                                             /* WIN */
-#titlebar-max {display: none !important;}                                                                    /* WIN */
-#titlebar-close {margin-right: 2px !important;}                                                              /* WIN */
+.titlebar-max {display: none !important;}                                                                    /* WIN */
+.titlebar-close {margin-right: 2px !important;}                                                              /* WIN */
 
 
 
@@ -160,6 +154,10 @@
 /*#appMenu-popup .panel-arrow {margin-right: 230px !important;}                                                /* MAC */
 
 #appMenu-notification-popup {display:none !important;}
+
+/* hide update banner */
+.panel-banner-item[notificationid^="update"] {display:none;}
+#appMenu-fxa-container {margin-top: 0 !important;}
 
 /* Back & Forward buttons */ 
 #back-button > .toolbarbutton-icon,
