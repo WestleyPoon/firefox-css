@@ -107,8 +107,7 @@
 /* Tab toolbar adjustments */
 #TabsToolbar {
     background: #343434 !important;
-    margin-bottom: -2px !important;  /* tab/bav bar intersection */      
-    /*margin-left: 72px !important;  /* room at the front of the bar */                                        /* MAC */}
+    margin-bottom: -2px !important;  /* tab/bav bar intersection */}
 
 /* active tab edge shadow */
 .tabbrowser-tab[selected] {box-shadow: 0px 0px 10px #000 !important;}
@@ -119,17 +118,16 @@
 /* tab line - default 0a84ff, orange ff760a */
 .tab-line {
   background-color: #0a84ff !important;
-  height: 2px !important;
-  /*margin-top: 27px; /* move to bottom of tab */}
+  height: 2px !important;}
 .tab-line[selected="true"] {background-color: #0a84ff !important;}
 
 /* tab text - inactive */
 .tabbrowser-tab:not([selected]) {color: #b4b4b4 !important;}
 
-/* titlebar buttons */
-.titlebar-button {padding: 8px 12px !important;}                                                             /* WIN */
-.titlebar-max {display: none !important;}                                                                    /* WIN */
-.titlebar-close {margin-right: 2px !important;}                                                              /* WIN */
+/* titlebar buttons */                                                      /* WIN10 */
+.titlebar-button {padding: 8px 12px !important;}
+.titlebar-max {display: none !important;}
+.titlebar-close {margin-right: 2px !important;}
 
 
 
@@ -139,7 +137,8 @@
     box-shadow: 0 0px 0 !important;  /* line between tab and nav bar */}
 
 /* menu button */
-#PanelUI-button {-moz-box-ordinal-group: 0 !important;} /* move to front of the navbar */
+/* move to front of the navbar */
+#PanelUI-button {-moz-box-ordinal-group: 0 !important;}
 #PanelUI-menu-button {
     margin-left: 7px !important;
     margin-right: 1px !important;
@@ -148,16 +147,19 @@
 #PanelUI-menu-button > .toolbarbutton-badge-stack > .toolbarbutton-icon {
     width: 32px !important;
     margin: -6px !important;}
-#appMenu-popup {margin-right: -258px !important;}                                                            /* WIN */
-#appMenu-popup .panel-arrow {margin-right: 248px !important;}                                                /* WIN */
-/*#appMenu-popup {margin-right: -237px !important;}                                                            /* MAC */
-/*#appMenu-popup .panel-arrow {margin-right: 230px !important;}                                                /* MAC */
 
+/* menu dropdown */                                                         /* WIN10 */
+#appMenu-popup {margin-right: -258px !important;}
+#appMenu-popup .panel-arrow {margin-right: 248px !important;}
+/* menu dropdown */                                                           /* MAC */
+/*#appMenu-popup {margin-right: -237px !important;}
+#appMenu-popup .panel-arrow {margin-right: 230px !important;}
+
+/* hide update notification, banner, and badge */
 #appMenu-notification-popup {display:none !important;}
-
-/* hide update banner */
 .panel-banner-item[notificationid^="update"] {display:none;}
 #appMenu-fxa-container {margin-top: 0 !important;}
+.toolbarbutton-badge {display: none !important;}
 
 /* Back & Forward buttons */ 
 #back-button > .toolbarbutton-icon,
@@ -176,7 +178,6 @@
 #urlbar, .searchbar-textbox {
     font-size: 1em !important;
     border: none !important;}
-/*#urlbar[focused=true] {border-color: #ff760a !important}*/
 #identity-icon-labels {display: none !important;}
 
 
@@ -185,7 +186,7 @@
 #PersonalToolbar {
     margin-top: -1px !important;
     margin-bottom: -1px !important; 
-    margin-left: -2px !important;                                                                            /* WIN */
+    margin-left: -2px !important;                                           /* WIN10 */
     min-height: 26px !important;}
 
 
