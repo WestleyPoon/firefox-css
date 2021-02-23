@@ -79,6 +79,9 @@
 #bookmarks-menu-button > .toolbarbutton-icon
 {transform: scale(.9)}
 
+/* url bar */
+#urlbar, .searchbar-textbox { font-size: 1em !important }
+
 
 /* ---- bookmarks bar -------------------------------------------------------------- */
 #PersonalToolbar {
