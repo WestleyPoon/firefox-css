@@ -6,3 +6,4 @@ userChrome.css customizations - on nightly 88!</br>
 
 **Files**</br>
 all go in profile folder/chrome
+in customize menu, change theme to default dark and density to compact
