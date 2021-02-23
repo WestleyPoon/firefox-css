@@ -1,5 +1,4 @@
 :root{
-  scrollbar-face-color: #474747;
-  scrollbar-track-color: #343434;
+  scrollbar-color: #aaaaaa #343434 !important;
   scrollbar-width: thin;
 }
