@@ -87,7 +87,14 @@
 #PersonalToolbar {
     margin-top: -1px !important;
     margin-bottom: 0px !important;                                         /* WIN10 */
+    min-height: 0px !important;
+    max-height: 0px !important;
+}
+
+/* reveal bookmarks bar on ui hover */
+#navigator-toolbox:hover #PersonalToolbar {
     min-height: 26px !important;
+    max-height: 26px !important;
 }
 
 
