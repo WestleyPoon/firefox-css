@@ -90,11 +90,13 @@
     margin-bottom: 0px !important;                                         /* WIN10 */
     min-height: 0px !important;
     max-height: 0px !important;
+    transition: min-height 0.2s, max-height 0.2s;
 }
 
 #navigator-toolbox:hover #PersonalToolbar {
     min-height: 28px !important;
     max-height: 28px !important;
+    transition-delay: .2s;
 }
 
 
