@@ -12,6 +12,7 @@
 
 #main-window {
     --toolbar-bgcolor: #343434 !important;
+    border: none !important;
 }
 
 
