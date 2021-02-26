@@ -1,4 +1,8 @@
-:root{
+* {
+  scrollbar-width: thin !important;
+}
+
+:root {
   scrollbar-color: #aaaaaa #343434 !important;
-  scrollbar-width: thin;
+  scrollbar-width: thin !important;
 }
