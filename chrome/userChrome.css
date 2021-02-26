@@ -16,7 +16,6 @@
 }
 
 
-@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 /* ---- tab bar -------------------------------------------------------------------- */
 /*extra space at the ends*/
 .titlebar-spacer { display: none }
